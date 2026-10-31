@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf2ed">
+  <meta name="description" content="Acompanhe seus conteúdos, revise aprovações e veja os resultados da semana na Duma 360.">
+  <title>Duma 360 · Studio</title>
+  <link rel="icon" href="assets/duma-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css?v=20261030-client">
+  <script src="assets/gsap.min.js" defer></script>
+  <script src="app.js?v=20261030-client" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="Duma 360, visão geral"><img src="assets/duma-mark.svg" alt="" width="31" height="31"><span>duma<span class="brand-number">360</span></span></a>
+      <nav id="navigation" aria-label="Navegação principal"><span id="nav-lens" class="nav-lens" aria-hidden="true"></span></nav>
+      <div class="topbar-actions">
+        <span class="demo-label">Dados de exemplo</span>
+        <button class="user-button" data-action="user" aria-label="Antônio Olavo, abrir configurações"><span class="avatar avatar-peach">AO</span><span class="user-name">Antônio Olavo</span><span data-icon="chevron-down"></span></button>
+      </div>
+    </header>
+    <div class="workspace-shell">
+      <main id="main" tabindex="-1"></main>
+      <footer class="workspace-footer"><span>Duma 360</span><span>Prévia interativa · dados de exemplo</span></footer>
+    </div>
+  </div>
+  <div id="overlay-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript>Ative o JavaScript para experimentar a interface Duma 360.</noscript>
+</body>
+</html>
